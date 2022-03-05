@@ -3,6 +3,7 @@ Predicting stock price in real time using Hive and Python
 (2022.03.05 Updated)
 
 ## Mac M1
+
 ### Prerequisites: homebrew, vscode, git, maven, java 11
 Check local Java path with:
 ```
@@ -85,7 +86,7 @@ JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_
 </configuration>
 ```
 
-## SSH Authentication
+### SSH Authentication
 
 Generate new keygen and registeration:
 ```
@@ -93,7 +94,7 @@ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
-## Start / Stop Hadoop
+### Start / Stop Hadoop
 ```shell
 # format HDFS
 $ hadoop namenode -format
