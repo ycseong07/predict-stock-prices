@@ -86,6 +86,18 @@ JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_
 </configuration>
 ```
 
+Update your ~/.bash_profile PATH:
+
+```shell
+PATH=$PATH:/opt/homebrew/Cellar/hadoop/3.3.2/sbin
+```
+
+Source your ~/.bash_profile
+
+```shell
+$ source ~/.bash_profile
+```
+
 ### SSH Authentication
 
 Generate new keygen and registeration:
