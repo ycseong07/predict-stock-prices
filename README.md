@@ -116,7 +116,7 @@ $ stop-all.sh
 ```
 
 ## References
-https://stackoverflow.com/questions/48978480/hadoop-permission-denied-publickey-password-keyboard-interactive-warning
-https://codewitharjun.medium.com/install-hadoop-on-macos-efe7c860c3ed
+https://stackoverflow.com/questions/48978480/hadoop-permission-denied-publickey-password-keyboard-interactive-warning  
+https://codewitharjun.medium.com/install-hadoop-on-macos-efe7c860c3ed  
 https://github.com/iizrailevsky/hadoop-hello-world
 
