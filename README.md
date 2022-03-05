@@ -104,7 +104,12 @@ $ start-all.sh
 Make sure all Hadoop processes started correctly:
 
 ```shell
-$ ps aux | grep hadoop | wc -l
+$ jps
+26564 Jps
+25812 NameNode
+26238 ResourceManager
+26335 NodeManager
+26047 SecondaryNameNode
 ```
 
 Check if Hadoop works in localhost:9870
