@@ -2,7 +2,7 @@
 Predicting stock price in real time using Hive and Python  
 (2022.03.05 Updated)
 
-
+## Mac M1
 ### Prerequisites: homebrew, vscode, git, maven, java 11
 Check local Java path with:
 ```
