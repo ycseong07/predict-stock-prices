@@ -1,4 +1,4 @@
-# MLWithStockPrices
+# predict-stock-prices
 Predicting stock price in real time using Hive and Python  
 (2022.03.05 Updated)
 
