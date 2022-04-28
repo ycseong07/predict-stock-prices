@@ -25,8 +25,57 @@ ENV JUPYTER_ENABLE_LAB=yes
 RUN apt-get update --yes && \
     apt-get install --yes --no-install-recommends \
     "openjdk-${openjdk_version}-jre-headless" \
-    ca-certificates-java && \
+    ca-certificates-java  \
+    curl && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
+
+
+
+
+# Install nodejs
+#FROM ubuntu:20.04
+#RUN apt install -y npm
+#RUN echo "NODE Version:" && node --version
+#RUN echo "NPM Version:" && npm --version
+
+
+#FROM ubuntu
+# Core dependencies
+#RUN apt-get update &&
+#RUN apt-get install --no-install-recommends curl
+
+# Node
+# Uncomment your target version
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+RUN sudo apt-get install -y nodejs
+RUN echo "NODE Version:" && node --version
+RUN echo "NPM Version:" && npm --version
+
+
+# Install Elyra
+#FROM python:3
+RUN  pip3 install --upgrade pip==20.2.4  && pip3 install --no-cache-dir  --upgrade  elyra[all]
+RUN jupyter lab  build --dev-build=False --minimize=False
+
+#  Install requirements
+COPY requirements.txt ./
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+
+RUN apt-get clean && rm requirements.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Spark installation
 WORKDIR /tmp
@@ -61,5 +110,12 @@ RUN mamba install --quiet --yes \
     mamba clean --all -f -y && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
+
+
+
+
+
+
+
 
 WORKDIR "${HOME}"
