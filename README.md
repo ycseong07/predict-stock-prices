@@ -7,4 +7,4 @@
 
 ## References
 - https://github.com/ruslanmv/Machine-Learning-with-Python-and-Spark
-- https://github.com/ruslanmv/Machine-Learning-with-Python-and-Spark
+- https://github.com/ruslanmv/Docker-Container-with-Pyspark-and-Jupyter-and-Elyra
