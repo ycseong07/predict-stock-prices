@@ -1,5 +1,6 @@
 # predict-stock-prices
-Predicting stock price in real time using Hive and Python  
+Predicting stock price in real time using Hive and Python
+It's not necessary for ML with pyspark in docker container. Follow the below if you want to do your projects on your local mac.
 (2022.03.05 Updated)
 
 ## Hadoop install on Mac M1
