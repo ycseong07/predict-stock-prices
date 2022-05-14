@@ -1,7 +1,7 @@
 ## How to build
 - docker build --no-cache --rm -t pyspark-elyra .
 
-## How to start
+## How to run
 
 - docker run -it --rm -v /your/local/folders:/home/jovyan/work -p 8888:8888 --user root -e GRANT_SUDO=yes pyspark-elyra
 
